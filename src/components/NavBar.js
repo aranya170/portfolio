@@ -246,7 +246,7 @@ class NavBar extends React.Component {
             <div className="logo-container btn-effect" ref={this.logoRef}>
               <img
                 className="logo"
-                src="/assets/logo.png"
+                src="/assets/Logo.png"
                 alt="Aranya Kishor Logo"
                 title="Logo"
                 style={{ height: "36px", width: "36px" }}
