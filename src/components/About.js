@@ -96,10 +96,7 @@ const About = () => {
         >
           <a href="#timeline">
             <span role="img" aria-label="timeline"></span>
-            View my <span className="about-timeline-highlight">
-              timeline
-            </span>{" "}
-            to learn more about my unique journey into data &rarr;
+            View my timeline to learn more about my <span className="about-timeline-highlight">unique journey into data</span>{" "} &rarr;
           </a>
         </p>
         <div className="about-actions" ref={(el) => (textRefs.current[6] = el)}>

@@ -4,12 +4,14 @@ import "../styles/Experience.css";
 
 const experienceItems = {
   "UIU Robotics Club": {
-    jobTitle: "Software Team Lead @",
-    duration: "JAN 2024 - AUG 2025",
+    jobTitle: "President @",
+    duration: "NOV 2025 - Present",
     desc: [
-      "Developed the club website using Codeigniter4, PHP, JS and Tailwind CSS, enhancing user experience and engagement with a modern, responsive design",
-      "Managed several projects and initiatives to promote robotics and programming within the club, including workshops, hackathons, and community outreach programs",
-      "Led a team of 50+ members in designing and implementing a new curriculum for the club, focusing on practical applications of robotics and programming, resulting in a 30% increase in member engagement",
+      "Led the executive committee and core members, enforcing a structured organogram to improve club efficiency and resolving internal communication gaps to ensure smooth operations.",
+      "Organized and executed events, workshops, and seminars, enhancing the club's visibility and engagement within the school community.",
+      "Developed and implemented a new curriculum for the club, focusing on practical applications of robotics and programming, resulting in a 30% increase in member engagement.",
+      " Spearheaded the launch of Bangladesh's first public open-source repository for robotics and IoT learning, creating accessible educational resources for students.",
+      
     ],
   },
   "CrossRoads Initiative": {
@@ -29,7 +31,7 @@ const experienceItems = {
       "Acted as a designer for the club, creating visually appealing graphics and promotional materials for events and initiatives, enhancing the club's visibility and engagement",
     ],
   },
-  ISTARC: {
+  "ISTARC": {
     jobTitle: "Club Co-ordinator @",
     duration: "January 2016 - OCT 2018",
     desc: [
