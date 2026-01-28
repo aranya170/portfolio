@@ -5,29 +5,35 @@ import "../styles/TechStack.css";
 import { RiFileExcel2Fill } from "react-icons/ri";
 import { VscVscode } from "react-icons/vsc";
 import { 
-  SiMysql, SiPostgresql, SiTableau, SiPython, 
-  SiPandas, SiNumpy, SiJupyter,
-  SiR, SiGit, SiFigma,
-  SiAdobeillustrator, SiAdobephotoshop
+  SiMysql, SiPostgresql, SiPython, 
+  SiPandas, SiNumpy, SiJupyter, SiGit, SiFigma,
+  SiAdobeillustrator, SiAdobephotoshop,
+  SiGithub, SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiJira, SiTinkercad
 } from "react-icons/si";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const techStackData = [
-  { name: "MySQL", icon: <SiMysql />, color: "#00758F" },
-  { name: "PostgreSQL", icon: <SiPostgresql />, color: "#336791" },
-  { name: "Excel", icon: <RiFileExcel2Fill />, color: "#217346" },
-  { name: "Tableau", icon: <SiTableau />, color: "#E97627" },
-  { name: "Python", icon: <SiPython />, color: "#3776AB" },
-  { name: "Pandas", icon: <SiPandas />, color: "#150458" },
-  { name: "NumPy", icon: <SiNumpy />, color: "#013243" },
-  { name: "R", icon: <SiR />, color: "#276DC3" },
-  { name: "VS Code", icon: <VscVscode />, color: "#007ACC" },
-  { name: "Git", icon: <SiGit />, color: "#F05032" },
-  { name: "Jupyter", icon: <SiJupyter />, color: "#F37626" },
-  { name: "Figma", icon: <SiFigma />, color: "#F24E1E" },
-  { name: "Illustrator", icon: <SiAdobeillustrator />, color: "#FF9A00" },
-  { name: "Photoshop", icon: <SiAdobephotoshop />, color: "#31A8FF" },
+  { name: "MySQL", icon: <SiMysql />, color: "#00758F" }, // ✓ Correct
+  { name: "PostgreSQL", icon: <SiPostgresql />, color: "#336791" }, // ✓ Correct
+  { name: "Excel", icon: <RiFileExcel2Fill />, color: "#217346" }, // ✓ Correct
+  { name: "Python", icon: <SiPython />, color: "#3776AB" }, // Should be #FFD43B or #306998
+  { name: "Pandas", icon: <SiPandas />, color: "#150458" }, // ✓ Correct
+  { name: "NumPy", icon: <SiNumpy />, color: "#013243" }, // ✓ Correct
+  { name: "VS Code", icon: <VscVscode />, color: "#007ACC" }, // ✓ Correct
+  { name: "Git", icon: <SiGit />, color: "#F05032" }, // Should be #F1502F
+  { name: "Jupyter", icon: <SiJupyter />, color: "#F37626" }, // ✓ Correct
+  { name: "Figma", icon: <SiFigma />, color: "#F24E1E" }, // ✓ Correct
+  { name: "Illustrator", icon: <SiAdobeillustrator />, color: "#FF9A00" }, // ✓ Correct
+  { name: "Photoshop", icon: <SiAdobephotoshop />, color: "#31A8FF" }, // ✓ Correct
+  { name: "Github", icon: <SiGithub />, color: "#F05032" }, // Should be #181717 or #000000
+  { name: "Html5", icon: <SiHtml5 />, color: "#E34F26" }, // Should be #E34F26
+  { name: "Css3", icon: <SiCss3 />, color: "#1572B6" }, // Should be #1572B6
+  { name: "Tailwindcss", icon: <SiTailwindcss />, color: "#06B6D4" }, // Should be #06B6D4
+  { name: "Javascript", icon: <SiJavascript />, color: "#F7DF1E" }, // Should be #F7DF1E
+  { name: "Jira", icon: <SiJira />, color: "#2684FF" }, // Should be #2684FF
+  { name: "Tinkercad", icon: <SiTinkercad />, color: "#1477D1" }, // Should be #1477D1
+
 ];
 
 export default function TechStack() {

@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import Icon from "./Icons";
 import "../styles/SideNavBar.css";
 import { gsap } from "gsap";
+import { SiOrcid } from "react-icons/si";
 
 export default function SideNavBar({ showStars, setShowStars }) {
   const sideNavRef = useRef(null);
@@ -65,12 +66,7 @@ export default function SideNavBar({ showStars, setShowStars }) {
         rel="noopener noreferrer"
         ref={addToRefs}
       >
-        <img
-          src="https://orcid.org/assets/vectors/orcid.logo.icon.svg"
-          alt="ORCID Logo"
-          className="sidenav-icon"
-          style={{ width: "24px", height: "24px" }} // Adjust size as needed
-        />
+        <SiOrcid className="sidenav-icon" />
       </a>
       <a
         href="mailto:aranya.akd@gmail.com"
