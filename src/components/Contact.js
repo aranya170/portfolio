@@ -113,56 +113,59 @@ export default function Contact() {
     };
   }, []);
 
-  const handleSend = (e) => {
+  const [status, setStatus] = useState("idle"); // idle, sending, success, error
+
+  const handleSend = async (e) => {
     e.preventDefault();
+    setStatus("sending");
 
-    gsap.to(formRef.current, {
-      opacity: 0,
-      y: -20,
-      duration: 0.3,
-      ease: "power2.inOut",
-      onComplete: () => {
-        formRef.current.style.display = "none";
-        successRef.current.style.display = "flex";
+    try {
+      // Replace 'YOUR_GOOGLE_SCRIPT_URL' with the URL you'll get in the next step
+      const response = await fetch("https://script.google.com/macros/s/AKfycbziN-8CZYf_SLoMykwZLQArQzT_vea5BHcKcxH_RQZ5whzCXoeaYuwZbXhw2ablsjhI/exec", {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          message: message,
+          date: new Date().toLocaleString(),
+        }),
+      });
 
-        gsap.fromTo(
-          successRef.current,
-          { opacity: 0, y: 20 },
-          { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }
-        );
-      },
-    });
+      // With no-cors, we assume success as long as no exception happens
+      setStatus("success");
+      gsap.to(formRef.current, {
+        opacity: 0,
+        y: -20,
+        duration: 0.3,
+        ease: "power2.inOut",
+        onComplete: () => {
+          formRef.current.style.display = "none";
+          successRef.current.style.display = "flex";
 
-    setIsSubmitted(true);
-
-    setTimeout(() => {
-      const mailtoUrl = `mailto:${yourEmail}?subject=Contact from ${name}&body=${encodeURIComponent(message)}`;
-      const newWindow = window.open(mailtoUrl, "_blank");
-
-      // Handle popup blockers
-      if (
-        !newWindow ||
-        newWindow.closed ||
-        typeof newWindow.closed === "undefined"
-      ) {
-        const successEl = successRef.current;
-        if (successEl) {
-          const messageEl = successEl.querySelector("p");
-          if (messageEl) {
-            messageEl.innerHTML =
-              'Your email client could not be opened automatically. Please click <a href="' +
-              mailtoUrl +
-              '" target="_blank">here</a> to open it manually.';
-          }
-        }
-      }
-    }, 1000);
+          gsap.fromTo(
+            successRef.current,
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }
+          );
+        },
+      });
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setStatus("error");
+      alert("Oops! There was a problem saving your message.");
+    }
   };
 
   const handleReset = () => {
     setName("");
     setEmail("");
     setMessage("");
+    setStatus("idle");
 
     gsap.to(successRef.current, {
       opacity: 0,
@@ -240,8 +243,12 @@ export default function Contact() {
           </div>
 
           <div className="contact-actions">
-            <button className="contact-send-btn btn-effect" type="submit">
-              Send Message
+            <button
+              className="contact-send-btn btn-effect"
+              type="submit"
+              disabled={status === "sending"}
+            >
+              {status === "sending" ? "Sending..." : "Send Message"}
               <Icon name="Send" className="btn-icon" />
             </button>
           </div>

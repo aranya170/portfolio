@@ -8,11 +8,10 @@ import CodeViewer from "./CodeViewer";
 import Icon from "./Icons";
 import "../styles/Projects.css";
 import {
-  VscFolder, VscFolderOpened, VscMarkdown, VscChevronRight
+  VscFolder, VscFolderOpened, VscMarkdown, VscChevronRight, VscGlobe
 } from "react-icons/vsc";
 import { SiMysql, SiPython } from "react-icons/si";
 import { BsDatabase } from "react-icons/bs";
-
 gsap.registerPlugin(ScrollTrigger, Flip);
 
 const projectsData = ProjectList;
@@ -530,6 +529,7 @@ export default function Projects() {
                         </ul>
                         
                         <div className="project-links">
+                          
                           {selectedProject.dataset && (
                             <a
                               href={selectedProject.dataset}
@@ -552,7 +552,17 @@ export default function Projects() {
                               <Icon name="Medium" />
                             </a>
                           )}
-                          
+                          {selectedProject.website && (
+                            <a
+                              href={selectedProject.website}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              title="View Live Site"
+                              className="icon-link website-link"
+                            >
+                              <VscGlobe style={{ fontSize: '18px' }} />
+                            </a>
+                          )}
                           {selectedProject.github && (
                             <a
                               href={selectedProject.github}

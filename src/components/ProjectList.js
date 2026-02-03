@@ -3,6 +3,36 @@ import Code from "./codes/code";
 const ProjectList = {
   Software: [
     {
+      name: "UIU Robotics",
+      image: "/assets/uiu_robotics.png",
+      github: "https://github.com/aranya170/UIURC.git", // Private university repository
+      website: "https://robotics.uiu.ac.bd/",
+      tags: ["React", "Node.js", "Express", "MongoDB", "UI/UX Design"],
+      files: [
+        {
+          name: "README.md",
+          type: "info",
+          content:
+            "Initiated, designed, and implemented the official full-stack website for UIU Robotics. I handled the entire lifecycle from initial prototyping to final deployment. The platform serves as a central hub for club members, showcasing robotics projects, managing events, and fostering innovation within the university community.",
+        },
+      ],
+    },
+    {
+      name: "Dacca Delights",
+      image: "/assets/daccadelights.png", // Ensure you have this asset
+      github: "https://github.com/aranya170/DaccaDelights.git", // Left blank as it is a private freelance project
+      website: "https://daccadelights.com/",
+      tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"], 
+      files: [
+        {
+          name: "README.md",
+          type: "info",
+          content:
+            "A full-stack e-commerce platform developed for a bakery shop. This freelance project involved designing an intuitive frontend and a robust backend to manage orders, inventory, and customer interactions. Hosted at daccadelights.com, the site provides a seamless shopping experience for high-quality baked goods.",
+        },
+      ],
+    },
+    {
       name: "DirectEdge",
       image: "/assets/directedge.png",
       github: "https://github.com/aranya170/DirectEdge",
@@ -19,14 +49,7 @@ const ProjectList = {
           name: "README.md",
           type: "info",
           content:
-            "At DirectEdge, we revolutionize the way businesses source their products by directly connecting them with farmers. Our mission is to streamline the distribution process, reducing intermediaries and ensuring fresher, more sustainable goods. As an all-stop business solution, we handle everything from procurement to delivery, offering a seamless, efficient, and transparent supply chain. By partnering with us, businesses gain access to high-quality products at competitive prices, while farmers receive fair compensation for their hard work. Join us in reshaping the future of supply chains, fostering stronger relationships between producers and businesses, and promoting a more sustainable food system.",
-        },
-        {
-          name: "correlation.ipynb",
-          type: "notebook",
-          content:
-            "https://nbviewer.org/github/rafsanahmed28/Movie-Correlation---Pandas-NumPy-SNS/blob/main/Finding%20Movie%20Correlation.ipynb?flush_cache=true",
-          language: "python",
+            "DirectEdge revolutionizes sourcing by connecting businesses directly with farmers, streamlining distribution for fresher, sustainable goods. As an all-in-one solution, we manage procurement through delivery via a transparent supply chain. We’ve integrated a compact, user-friendly POS and ERP system alongside advanced demand forecasting to optimize efficiency. By eliminating intermediaries, we ensure competitive pricing for businesses and fair compensation for farmers. Join us in building a smarter, data-driven, and sustainable food system.",
         },
       ],
     },
