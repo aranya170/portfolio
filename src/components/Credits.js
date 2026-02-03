@@ -39,11 +39,28 @@ const Credits = () => {
     <div id="credits" ref={creditsRef}>
       <div className="ending-credits">
         <SideNavBar />
-        <a
-          href="https://github.com/aranya170"
-          target="_blank"
-          rel="noopener noreferrer"
-        ></a>
+        <div className="social-links-footer">
+          <a
+            href="https://github.com/aranya170"
+            target="_blank"
+            rel="noopener noreferrer me"
+            title="Aranya Kishor Das on GitHub"
+          >
+            GitHub
+          </a>
+          <span className="footer-separator"> | </span>
+          <a
+            href="https://www.linkedin.com/in/aranya170"
+            target="_blank"
+            rel="noopener noreferrer me"
+            title="Aranya Kishor Das on LinkedIn"
+          >
+            LinkedIn
+          </a>
+        </div>
+        <div className="footer-copyright">
+          © {new Date().getFullYear()} Aranya Kishor Das. All rights reserved.
+        </div>
       </div>
     </div>
   );

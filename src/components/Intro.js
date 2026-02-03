@@ -163,12 +163,14 @@ const Intro = () => {
             className="text-typing-container"
             style={{ position: "relative" }}
           >
-            <span className="intro-title" ref={textRef}>
-              Hi there! I'm{" "}
-            </span>
-            <span className="intro-name" ref={nameRef}>
-              Aranya
-            </span>
+            <h1 className="intro-title-wrapper" style={{ display: "inline", fontSize: "inherit", fontWeight: "inherit" }}>
+              <span className="intro-title" ref={textRef}>
+                Hi there! I'm{" "}
+              </span>
+              <span className="intro-name" ref={nameRef}>
+                Aranya Kishor Das
+              </span>
+            </h1>
 
             <div
               ref={cursorRef}
