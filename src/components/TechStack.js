@@ -5,18 +5,17 @@ import "../styles/TechStack.css";
 import { RiFileExcel2Fill } from "react-icons/ri";
 import { VscVscode } from "react-icons/vsc";
 import { 
-  SiMysql, SiPostgresql, SiPython, 
+  SiMysql, SiPython, 
   SiPandas, SiNumpy, SiJupyter, SiGit, SiFigma,
   SiAdobeillustrator, SiAdobephotoshop,
-  SiGithub, SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiJira, SiTinkercad
+  SiGithub, SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiJira, SiTinkercad, SiOpenjdk
 } from "react-icons/si";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const techStackData = [
   { name: "MySQL", icon: <SiMysql />, color: "#00758F" }, // ✓ Correct
-  { name: "PostgreSQL", icon: <SiPostgresql />, color: "#336791" }, // ✓ Correct
-  { name: "Excel", icon: <RiFileExcel2Fill />, color: "#217346" }, // ✓ Correct
+  { name: "Java", icon: <SiOpenjdk />, color: "#1477D1" }, 
   { name: "Python", icon: <SiPython />, color: "#3776AB" }, // Should be #FFD43B or #306998
   { name: "Pandas", icon: <SiPandas />, color: "#150458" }, // ✓ Correct
   { name: "NumPy", icon: <SiNumpy />, color: "#013243" }, // ✓ Correct
@@ -33,6 +32,7 @@ const techStackData = [
   { name: "Javascript", icon: <SiJavascript />, color: "#F7DF1E" }, // Should be #F7DF1E
   { name: "Jira", icon: <SiJira />, color: "#2684FF" }, // Should be #2684FF
   { name: "Tinkercad", icon: <SiTinkercad />, color: "#1477D1" }, // Should be #1477D1
+ 
 
 ];
 

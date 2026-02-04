@@ -45,11 +45,11 @@ const milestones = [
     type: "education",
   },
   {
-    title: "Advanced Data Analysis & Storytelling",
+    title: "Advanced Robotics and Deep Learning",
     description:
-      "Deepened my skills in advanced data analysis techniques, delving deeper into advanced SQL queries,  and diving into Python to unlock even more powerful ways to explore, manipulate, and tell stories with data.",
+      "I am currently engaged in advanced research in robotics and deep learning, focusing on developing intelligent autonomous systems. My work involves implementing cutting-edge deep learning models to enhance robotic perception, decision-making, and control capabilities.",
     year: "Jan 2025 - Present",
-    type: "project",
+    type: "research",
     learnMoreLink: "#projects",
     learnMoreText: "View Projects",
   },

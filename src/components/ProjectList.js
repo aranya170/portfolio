@@ -40,7 +40,6 @@ const ProjectList = {
         "Computer Vision",
         "Deep Learning",
         "Python",
-        "Flask",
         "Tailwind CSS",
         "React",
       ],
@@ -82,72 +81,59 @@ const ProjectList = {
       ],
     },
   ],
-  Python: [
+  Research: [
     {
-      name: "Movie Correlation Analysis",
-      image: "/assets/correlation.png",
-      github:
-        "https://github.com/rafsanahmed28/Movie-Correlation---Pandas-NumPy-SNS",
-      tags: ["Pandas", "Numpy", "Seaborn", "Matplotlib"],
-      dataset: "https://www.kaggle.com/datasets/danielgrijalvas/movies",
+      name: "RoboNeT - Robotics, Networking, IoT & Data Communication Repository",
+      image: "/assets/research.png",
+      github: "https://github.com/FahimHafiz/RoboNeT-Robotics-Network-IoT-Repository.git",
+      tags: ["Autonomus", "Robotics", "IoT", "Data Communication"],
       files: [
         {
           name: "README.md",
           type: "info",
           content:
-            "Analyzed movie data to find correlations between different features such as budget, revenue, and ratings using Python libraries like Pandas, NumPy, and Seaborn. The project includes data cleaning, transformation, and visualization to uncover insights about the movie industry.",
+            "I led the development of RoboNeT as its highest contributor and Undergraduate Assistant of United International University, establishing Bangladesh’s first-ever open-source repository dedicated to robotics learning. This comprehensive platform centralizes resources for robotics, networking, IoT, and data communication to empower the country's next generation of engineers and researchers.",
         },
         {
-          name: "correlation.ipynb",
+          name: "RoboNeT-Robotics-Network-IoT-Repository",
           type: "notebook",
           content:
-            "https://nbviewer.org/github/rafsanahmed28/Movie-Correlation---Pandas-NumPy-SNS/blob/main/Finding%20Movie%20Correlation.ipynb?flush_cache=true",
+            "https://prettyhub.vercel.app/FahimHafiz/RoboNeT-Robotics-Network-IoT-Repository",
+          language: "Robotics, Networking, IoT & Data Communication",
+        },
+      ],
+    },
+    {
+      name: "Identification and Classification of the Dark Triad Personality Traits Using Machine Learning",
+      image: "/assets/DarkTriads.png",
+      tags: ["Pandas", "Numpy", "Matplotlib"],
+      files: [
+        {
+          name: "README.md",
+          type: "info",
+          content:
+            "This project utilizes machine learning algorithms to analyze behavioral data and psychometric patterns for the automated detection of Machiavellianism, Narcissism, and Psychopathy. By identifying these 'Dark Triad' traits, the system provides a data-driven framework for personality classification in clinical, organizational, or forensic contexts.",
+        },
+        {
+          name: "FinalUpdate.ipynb",
+          type: "notebook",
+          content:
+            "https://nbviewer.org/github/aranya170/Dark-Traid-Personality/blob/main/FinalUpdate.ipynb",
           language: "python",
         },
       ],
     },
 
     {
-      name: "Automating Crypto Data using CoinGecko API",
-      image: "/assets/crypto.png",
-      github:
-        "https://github.com/rafsanahmed28/Automating-Crypto-Data-using-CoinGecko-API",
-      tags: ["Pandas", "Seaborn", "Matplotlib"],
+      name: "Adaptive Weighted Ensemble Learning for Mixed Waste Classification",
+      image: "/assets/research2.jpg",
+      tags: ["Pandas", "Latex", "Matplotlib"],
       files: [
         {
           name: "README.md",
           type: "info",
           content:
-            "Automated the retrieval of cryptocurrency data using the CoinGecko API and performed analysis using Python libraries pandas, seaborn and matplotlib. This project is meant to showcase the data automation and collection process, which can be used for further analysis or visualization.",
-        },
-        {
-          name: "crypto.ipynb",
-          type: "notebook",
-          content:
-            "https://nbviewer.org/github/rafsanahmed28/Automating-Crypto-Data-using-CoinGecko-API/blob/main/Automating%20Crypto%20-%20CoinGecko%20API.ipynb?flush_cache=true",
-          language: "python",
-        },
-      ],
-    },
-
-    {
-      name: "Amazon Web Scraping",
-      image: "/assets/amazon.png",
-      github: "https://github.com/rafsanahmed28/Amazon-Web-Scraping",
-      tags: ["BeautifulSoup", "Pandas", "Web Scraping", "Email Automation"],
-      files: [
-        {
-          name: "README.md",
-          type: "info",
-          content:
-            "Scraped product data from Amazon using BeautifulSoup and Pandas. The data is stored in a CSV file and is used for tracking price changes over time. This project also showcases how you can email yourself whenever a product's price drops below a certain threshold.",
-        },
-        {
-          name: "amazon.ipynb",
-          type: "notebook",
-          content:
-            "https://nbviewer.org/github/rafsanahmed28/Amazon-Web-Scraping/blob/main/Amazon%20Web%20Scraping%20-%20Data%20Project.ipynb?flush_cache=true",
-          language: "python",
+            "This project implements an adaptive ensemble framework that dynamically adjusts the influence of multiple deep learning models to improve classification accuracy across diverse waste streams. By prioritizing the most reliable sub-models for specific materials, the system achieves superior robustness in identifying recyclables and hazardous items within complex, mixed environments.",
         },
       ],
     },

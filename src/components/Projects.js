@@ -333,7 +333,9 @@ export default function Projects() {
 
   useEffect(() => {
     sectionKeys.forEach(section => {
-      const { projectIdx, fileIdx } = selected[section];
+      const sectionState = selected[section];
+      if (!sectionState) return;
+      const { projectIdx, fileIdx } = sectionState;
       const selectedFile = projectsData[section][projectIdx]?.files[fileIdx];
       
       if (selectedFile?.type === "code" && contentRefs.current[section]?.current) {
@@ -377,7 +379,8 @@ export default function Projects() {
       
       {sectionKeys.map((section, sectionIndex) => {
         const projects = projectsData[section] || [];
-        const { projectIdx, fileIdx } = selected[section] || {};
+        const sectionState = selected[section] || { projectIdx: 0, fileIdx: 0 };
+        const { projectIdx, fileIdx } = sectionState;
         const selectedProject = projects[projectIdx];
         const selectedFile = selectedProject?.files[fileIdx];
         const activeFolder = activeFolders[section];

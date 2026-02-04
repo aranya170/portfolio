@@ -14,6 +14,16 @@ const experienceItems = {
       
     ],
   },
+  "United International University": {
+    jobTitle: "Undergraduate Research Assistant @",
+    duration: "JUN 2025 - Present",
+    desc: [
+      "Spearheaded RoboNeT, Bangladesh's first open-source robotics and IoT learning repository, acting as the lead contributor to provide accessible educational resources nationwide.",
+      "Developed and implemented a practical robotics curriculum, resulting in a significant increase in member engagement through hands-on programming and deep learning modules.",
+      "Collaborated with faculty to design and execute experiments in autonomous systems and machine learning, contributing to ongoing research projects and publications.",
+      "Mentored 50+ undergraduate students in robotics and deep learning, providing technical guidance on hardware integration and neural network optimization."
+    ],
+  },
   "CrossRoads Initiative": {
     jobTitle: "Technical Lead @",
     duration: "JUN 2020 - FEB 2022",
