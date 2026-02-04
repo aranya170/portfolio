@@ -154,6 +154,30 @@ const ProjectList = {
   ],
   Hardware: [
     {
+      name: "Delta Arm",
+      image: "/assets/Hardware5.jpg", // Replace with your actual asset path
+      tags: ["Arduino", "Inverse Kinematics", "Parallel Robotics", "3D Printing"],
+      files: [
+        {
+          name: "README.md",
+          type: "info",
+          content: "Developed a high-speed Delta parallel robot designed for rapid assembly and precision sorting. Utilizing a parallel kinematic geometry, I synchronized three motors to control spatial coordinates via complex inverse kinematics. This design ensures the end-effector remains stable and parallel to the work surface, enabling high-acceleration movements and exceptional repeatability.",
+        },
+      ],
+    },
+    {
+      name: "Scara Arm",
+      image: "/assets/Hardware4.jpeg",
+      tags: ["Arduino Nano", "3D Design", "Kinematics"],
+      files: [
+        {
+          name: "README.md",
+          type: "info",
+          content: "Designed and prototyped a 4-axis SCARA robotic arm utilizing 3D-printed components and an Arduino Nano. The project focuses on high-precision movement for automated pick-and-place tasks. I implemented the kinematics logic to control joint rotations, ensuring smooth trajectories while optimizing the arm’s reach and payload stability.",
+        },
+      ],
+    },
+    {
       name: "4 Wings Drone",
       image: "/assets/Hardware3.jpg",
       tags: ["Arduino Nano", "3D Design", "Brushless Motor"],
