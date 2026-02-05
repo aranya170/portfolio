@@ -141,7 +141,7 @@ const ProjectList = {
   Hardware: [
     {
       name: "Delta Arm",
-      image: "/assets/Hardware5.jpg", // Replace with your actual asset path
+      image: "/assets/Hardware5.jpg",
       tags: ["Arduino", "Inverse Kinematics", "Parallel Robotics", "3D Printing"],
       files: [
         {
@@ -179,7 +179,7 @@ const ProjectList = {
       name: "IOT Based Smart Bus Tracking System",
       image: "/assets/Hardware1.png",
       github: "https://github.com/aranya170/Shuttle-Bus-Tracking-System",
-      tags: ["Arduino", "ESP 32", "Laser Emmiter", "LDR", "GPS Module"],
+      tags: ["Arduino", "ESP 32", "LDR", "GPS Module"],
       files: [
         {
           name: "README.md",

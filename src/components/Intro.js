@@ -222,12 +222,12 @@ const Intro = () => {
 
         <div className="intro-buttons" ref={buttonsRef}>
           <a
-            href="/assets/resume.pdf"
+            href="/assets/My_CV.pdf"
             className="outline-button btn-effect"
             target="_blank"
             rel="noopener noreferrer"
           >
-            View Resume
+            View CV
             <Icon name="Document" className="button-icon" />
           </a>
         </div>
