@@ -4,7 +4,7 @@ A sleek, high-performance personal website designed with a focus on user experie
 
 ### 🛠️ Tech Stack
 - **Frontend:** React.js
-- **Styling:** CSS3 / [Your Animation Lib, e.g., Framer Motion]
+- **Styling:** CSS3
 - **Hosting & Backend:** Firebase
 - **Speed:** Optimized for near-instant load times
 
