@@ -26,8 +26,8 @@ const ProjectList = {
     },
     {
       name: "Dacca Delights",
-      image: "/assets/daccadelights.png", // Ensure you have this asset
-      github: "https://github.com/aranya170/DaccaDelights.git", // Left blank as it is a private freelance project
+      image: "/assets/daccadelights.png",
+      github: "https://github.com/aranya170/DaccaDelights.git",
       website: "https://daccadelights.com/",
       tags: ["MySQL", "Tailwind CSS", "PHP"], 
       files: [

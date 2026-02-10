@@ -209,15 +209,15 @@ const Intro = () => {
         <div className="intro-subtitle" ref={subtitleRef}>
           I'm a{" "}
           <span className="intro-subtitle-name">
-            Data Scientist & Software Engineer
+            AI Researcher & Robotics Enthusiast
           </span>{" "}
-          with a love for Artificial Intelligence.
+          dedicated to Intelligent Systems.
         </div>
 
         <div className="intro-desc" ref={descRef}>
-          I’m a builder at heart who loves solving problems. Whether it’s
-          streamlining tasks, connecting systems, or experimenting with new
-          tools, I enjoy creating solutions that work smarter and faster.
+          From building RC cars in highschool to leading UIU Robotics and
+          researching AI, I'm driven by a passion for creating smarter solutions
+          through Deep Learning and Robotics.
         </div>
 
         <div className="intro-buttons" ref={buttonsRef}>

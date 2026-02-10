@@ -8,6 +8,7 @@ import {
   FcGoogle,
   FcAcceptDatabase,
   FcStatistics,
+  FcReading,
 } from "react-icons/fc";
 import "../styles/Timeline.css";
 
@@ -15,43 +16,40 @@ gsap.registerPlugin(ScrollTrigger);
 
 const milestones = [
   {
-    title: "Figma Design",
-    description:
-      "My journey into computer science began with a passion for design, where I honed my skills in Figma, creating user-centric designs that prioritize usability and aesthetics.",
-    year: "Sep 2019 - Dec 2021",
+    title: "Early Curiosity",
+    description: "Fascinated by computers and RC cars in Class 8, discovering microcontrollers like Arduino and ESP.",
+    year: "2015",
     type: "startup",
   },
   {
-    title: "Exposure to the field of Computer Science",
-    description:
-      "During the time of Covid, I explored various fields of computer science, including web development, data structures, and algorithms, laying the foundation for my future endeavors.",
-    year: "Sep 2020 - Dec 2021",
+    title: "Exploring CS & Design",
+    description: "Explored programming, software engineering, and graphics design during high school.",
+    year: "2015 - 2019",
     type: "statistics",
-    learnMoreLink: "#experience",
-    learnMoreText: "View Experience",
   },
   {
-    title: "Decision to persue a career in Computer Science",
-    description:
-      "Realized my passion for computer science and decided to pursue a career in the field, focusing on software development and data science.",
-    year: "Feb 2022 - Present",
+    title: "COVID & Web Dev",
+    description: "Deep dived into Web Development and UI/UX design via Figma during the pandemic.",
+    year: "2020 - 2021",
+    type: "startup",
+  },
+  {
+    title: "Undergrad Life at UIU",
+    description: "Started CS at United International University after receiving 19 admission offers from USA & Switzerland.",
+    year: "2022",
     type: "education",
   },
   {
-    title: "Declaring Computer Science Major in Data Science",
-    description:
-      "While pursuing my degree, I declared a major in Data Science, focusing on data analysis, machine learning, and data visualization.",
-    year: "Jun 2025 - Present",
-    type: "education",
-  },
-  {
-    title: "Advanced Robotics and Deep Learning",
-    description:
-      "I am currently engaged in advanced research in robotics and deep learning, focusing on developing intelligent autonomous systems. My work involves implementing cutting-edge deep learning models to enhance robotic perception, decision-making, and control capabilities.",
-    year: "Jan 2025 - Present",
+    title: "Pivot to AI & DL",
+    description: "Moved career focus to Deep Learning and AI, starting research and building several projects.",
+    year: "2024",
     type: "research",
-    learnMoreLink: "#projects",
-    learnMoreText: "View Projects",
+  },
+  {
+    title: "Research & Leadership",
+    description: "Serving as Undergraduate Research Assistant, TA for IoT/Robotics, and President of UIU Robotics Club.",
+    year: "2025 - Present",
+    type: "career",
   },
 ];
 
@@ -162,6 +160,8 @@ export default function Timeline() {
         return <FcAcceptDatabase className="timeline-icon" />;
       case "statistics":
         return <FcStatistics className="timeline-icon" />;
+      case "research":
+        return <FcReading className="timeline-icon" />;
       default:
         return null;
     }
@@ -170,7 +170,7 @@ export default function Timeline() {
   return (
     <div id="timeline">
       <div className="section-header">
-        <span className="section-title">My Journey to Data</span>
+        <span className="section-title">My Journey</span>
       </div>
 
       <div className="timeline-wrapper" ref={timelineWrapRef}>

@@ -14,7 +14,7 @@ export default function Contact() {
   const formRef = useRef(null);
   const successRef = useRef(null);
   const contactSectionRef = useRef(null);
-  const yourEmail = "[aranya.akd@gmail.com]";
+  const yourEmail = "aranya.akd@gmail.com";
 
   useEffect(() => {
     gsap.set(".contact-container", {
@@ -194,9 +194,10 @@ export default function Contact() {
       </div>
       <div className="contact-intro">
         <p>
-          I’m currently exploring data analyst opportunities and always open to
-          connecting with like-minded professionals. If you have a role,
-          project, or collaboration in mind, I’d love to hear from you!
+          I’m currently exploring research and leadership opportunities in AI and
+          Robotics. I'm always open to connecting with like-minded
+          professionals, researchers, or collaborators. If you have a project or
+          role in mind, I’d love to hear from you!
         </p>
       </div>
       <div className="contact-container">

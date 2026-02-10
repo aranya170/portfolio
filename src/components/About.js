@@ -57,32 +57,33 @@ const About = () => {
       <div className="about-content">
         <div className="about-description">
           <p ref={(el) => (textRefs.current[0] = el)}>
-            Hi, my name is Aranya and I enjoy fiddling with numbers and solving
-            problems. My interest in CS started back in 2016 when I was just in
-            the junior school. I was fascinated by a remote control car. I
-            wanted to know how it worked, so I took it apart and tried to put it
-            back together. That curiosity led me to explore coding.
+            Hi, my name is Aranya and I enjoy solving puzzles, building things,
+            and exploring technology. My journey began in 2015 when I became
+            fascinated by <span className="highlight">remote-controlled cars</span> and
+            microcontrollers like <span className="highlight">Arduino and ESP</span>. That
+            childhood curiosity sparked a lifelong passion for electronics and
+            robotics.
           </p>
 
           <p ref={(el) => (textRefs.current[1] = el)}>
-            Since then, I’ve earned a degree in Computer Science Engineering
-            from the United International University, where I specialized in and
-            built a strong foundation in{" "}
-            <span className="highlight">
-              Data Science, Python, Design and Software Development
-            </span>
-            . For me, computer science is not just about writing code; it's
-            about understanding how technology can solve real-world problems and
-            make life easier.
+            From 2015 to 2019, I explored the vast fields of computer science,
+            graphics design, and software engineering. During the pandemic, I
+            deep-dived into{" "}
+            <span className="highlight">Web Development and Figma Design</span>.
+            My academic journey eventually led me to United International
+            University, after receiving 19 admission offers from universities in
+            the <span className="highlight">USA and Switzerland</span>.
           </p>
 
           <p ref={(el) => (textRefs.current[2] = el)}>
-            I have a strong appetite for learning and I'm always eager to
-            explore new technologies. This website is a testament to my journey
-            where I picked up{" "}
-            <span className="highlight">Tailwind, React & JavaScript</span>{" "}
-            along the way. I also have a background in{" "}
-            <span className="highlight"> Graphic Design. </span>
+            In 2024, I pivoted my focus toward{" "}
+            <span className="highlight">
+              Deep Learning and Artificial Intelligence
+            </span>
+            . Today, I serve as an Undergraduate Research Assistant at UIU, a
+            Teaching Assistant for IoT and Robotics, and the{" "}
+            <span className="highlight">President of the UIU Robotics Club</span>,
+            where I continue to push the boundaries of intelligent systems.
           </p>
 
           <p ref={(el) => (textRefs.current[4] = el)}>
@@ -96,7 +97,9 @@ const About = () => {
         >
           <a href="#timeline">
             <span role="img" aria-label="timeline"></span>
-            View my timeline to learn more about my <span className="about-timeline-highlight">unique journey into data</span>{" "} &rarr;
+            View my timeline to learn more about my{" "}
+            <span className="about-timeline-highlight">unique journey</span>{" "}
+            &rarr;
           </a>
         </p>
         <div className="about-actions" ref={(el) => (textRefs.current[6] = el)}>
