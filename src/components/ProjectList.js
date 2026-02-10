@@ -11,7 +11,7 @@ const ProjectList = {
       files: [
         {
           name: "UIU Robotics",
-          type: "website",
+          type: "notebook",
           content:
             "https://robotics.uiu.ac.bd/",
           language: "robotics.uiu.ac.bd",
@@ -33,7 +33,7 @@ const ProjectList = {
       files: [
         {
           name: "Dacca Delights",
-          type: "website",
+          type: "notebook",
           content:
             "https://daccadelights.com/",
           language: "daccadelights.com",
@@ -110,7 +110,7 @@ const ProjectList = {
         },
         {
           name: "RoboNeT-Robotics-Network-IoT-Repository",
-          type: "website",
+          type: "notebook",
           content:
             "https://prettyhub.vercel.app/FahimHafiz/RoboNeT-Robotics-Network-IoT-Repository",
           language: "Robotics, Networking, IoT & Data Communication",
