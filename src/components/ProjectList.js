@@ -7,13 +7,20 @@ const ProjectList = {
       image: "/assets/uiu_robotics.png",
       github: "https://github.com/aranya170/UIURC.git", // Private university repository
       website: "https://robotics.uiu.ac.bd/",
-      tags: ["React", "Node.js", "Express", "MongoDB", "UI/UX Design"],
+      tags: ["Tailwind CSS", "Laravel", "UI/UX Design", "PHP"],
       files: [
         {
           name: "README.md",
           type: "info",
           content:
             "Initiated, designed, and implemented the official full-stack website for UIU Robotics. I handled the entire lifecycle from initial prototyping to final deployment. The platform serves as a central hub for club members, showcasing robotics projects, managing events, and fostering innovation within the university community.",
+        },
+        {
+          name: "UIU Robotics",
+          type: "notebook",
+          content:
+            "https://robotics.uiu.ac.bd/",
+          language: "robotics.uiu.ac.bd",
         },
       ],
     },
@@ -22,13 +29,20 @@ const ProjectList = {
       image: "/assets/daccadelights.png", // Ensure you have this asset
       github: "https://github.com/aranya170/DaccaDelights.git", // Left blank as it is a private freelance project
       website: "https://daccadelights.com/",
-      tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"], 
+      tags: ["MySQL", "Tailwind CSS", "PHP"], 
       files: [
         {
           name: "README.md",
           type: "info",
           content:
             "A full-stack e-commerce platform developed for a bakery shop. This freelance project involved designing an intuitive frontend and a robust backend to manage orders, inventory, and customer interactions. Hosted at daccadelights.com, the site provides a seamless shopping experience for high-quality baked goods.",
+        },
+        {
+          name: "Dacca Delights",
+          type: "notebook",
+          content:
+            "https://daccadelights.com/",
+          language: "daccadelights.com",
         },
       ],
     },
