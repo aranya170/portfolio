@@ -21,6 +21,7 @@ function getFileIcon(file) {
   if (file.name.endsWith(".md")) return <VscMarkdown style={{ ...iconStyle, color: "#519975" }} />;
   if (file.name.endsWith(".sql")) return <SiMysql style={{ ...iconStyle, color: "#00758f" }} />;
   if (file.name.endsWith(".ipynb")) return <SiPython style={{ ...iconStyle, color: "#3572A5" }} />;
+  if (file.name.toLowerCase().includes("website") || file.type === "website") return <VscGlobe style={{ ...iconStyle, color: "#64D98A" }} />;
   return <VscMarkdown style={{ ...iconStyle, color: "#8da1b9" }} />;
 }
 
