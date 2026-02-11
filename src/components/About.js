@@ -50,62 +50,75 @@ const About = () => {
 
   return (
     <section id="about" ref={aboutRef}>
-      <div className="section-header">
-        <span className="section-title about-title">About Me</span>
-      </div>
-
       <div className="about-content">
-        <div className="about-description">
-          <p ref={(el) => (textRefs.current[0] = el)}>
-            Hi, my name is Aranya and I enjoy solving puzzles, building things,
-            and exploring technology. My journey began in 2015 when I became
-            fascinated by <span className="highlight">remote-controlled cars</span> and
-            microcontrollers like <span className="highlight">Arduino and ESP</span>. That
-            childhood curiosity sparked a lifelong passion for electronics and
-            robotics.
-          </p>
+        <div className="about-flex-container">
+          <div className="about-image-container" ref={(el) => (textRefs.current[7] = el)}>
+            <img 
+              src="/assets/Aranya Kishor Das.png" 
+              alt="Aranya Kishor Das" 
+              className="about-profile-image"
+            />
+          </div>
+          
+          <div className="about-text-content">
+            <div className="section-header">
+              <span className="section-title about-title">About Me</span>
+            </div>
 
-          <p ref={(el) => (textRefs.current[1] = el)}>
-            From 2015 to 2019, I explored the vast fields of computer science,
-            graphics design, and software engineering. During the pandemic, I
-            deep-dived into{" "}
-            <span className="highlight">Web Development and Figma Design</span>.
-            My academic journey eventually led me to United International
-            University, after receiving 19 admission offers from universities in
-            the <span className="highlight">USA and Switzerland</span>.
-          </p>
+            <div className="about-description">
+              <p ref={(el) => (textRefs.current[0] = el)}>
+                Hi, my name is Aranya and I enjoy solving puzzles, building things,
+                and exploring technology. My journey began in 2015 when I became
+                fascinated by <span className="highlight">remote-controlled cars</span> and
+                microcontrollers like <span className="highlight">Arduino and ESP</span>. That
+                childhood curiosity sparked a lifelong passion for electronics and
+                robotics.
+              </p>
 
-          <p ref={(el) => (textRefs.current[2] = el)}>
-            In 2024, I pivoted my focus toward{" "}
-            <span className="highlight">
-              Deep Learning and Artificial Intelligence
-            </span>
-            . Today, I serve as an Undergraduate Research Assistant at UIU, a
-            Teaching Assistant for IoT and Robotics, and the{" "}
-            <span className="highlight">President of the UIU Robotics Club</span>,
-            where I continue to push the boundaries of intelligent systems.
-          </p>
+              <p ref={(el) => (textRefs.current[1] = el)}>
+                From 2015 to 2019, I explored the vast fields of computer science,
+                graphics design, and software engineering. During the pandemic, I
+                deep-dived into{" "}
+                <span className="highlight">Web Development and Figma Design</span>.
+                My academic journey eventually led me to United International
+                University, after receiving 19 admission offers from universities in
+                the <span className="highlight">USA and Switzerland</span>.
+              </p>
 
-          <p ref={(el) => (textRefs.current[4] = el)}>
-            Outside of work, I love playing video games. I'm also into aesthetic
-            interior designs and I love hoarding cool tech products.
-          </p>
-        </div>
-        <p
-          className="about-timeline-link"
-          ref={(el) => (textRefs.current[5] = el)}
-        >
-          <a href="#timeline">
-            <span role="img" aria-label="timeline"></span>
-            View my timeline to learn more about my{" "}
-            <span className="about-timeline-highlight">unique journey</span>{" "}
-            &rarr;
-          </a>
-        </p>
-        <div className="about-actions" ref={(el) => (textRefs.current[6] = el)}>
-          <a href="#contact" className="resume-button btn-effect">
-            Get in Touch <Icon name="Mail" className="button-icon" />
-          </a>
+              <p ref={(el) => (textRefs.current[2] = el)}>
+                In 2024, I pivoted my focus toward{" "}
+                <span className="highlight">
+                  Deep Learning and Artificial Intelligence
+                </span>
+                . Today, I serve as an Undergraduate Research Assistant at UIU, a
+                Teaching Assistant for IoT and Robotics, and the{" "}
+                <span className="highlight">President of the UIU Robotics Club</span>,
+                where I continue to push the boundaries of intelligent systems.
+              </p>
+
+              <p ref={(el) => (textRefs.current[4] = el)}>
+                Outside of work, I love playing video games. I'm also into aesthetic
+                interior designs and I love hoarding cool tech products.
+              </p>
+            </div>
+
+            <p
+              className="about-timeline-link"
+              ref={(el) => (textRefs.current[5] = el)}
+            >
+              <a href="#timeline">
+                <span role="img" aria-label="timeline"></span>
+                View my timeline to learn more about my{" "}
+                <span className="about-timeline-highlight">unique journey</span>{" "}
+                &rarr;
+              </a>
+            </p>
+            <div className="about-actions" ref={(el) => (textRefs.current[6] = el)}>
+              <a href="#contact" className="resume-button btn-effect">
+                Get in Touch <Icon name="Mail" className="button-icon" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
