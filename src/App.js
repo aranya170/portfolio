@@ -9,6 +9,7 @@ import NavBar from "./components/NavBar";
 import SideNavBar from "./components/SideNavBar";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import GitHubContributions from "./components/GitHubContributions";
 import { StarsCanvas } from "./components/StarBackground";
 import "./App.css";
 import "./styles/Global.css";
@@ -30,6 +31,7 @@ function App() {
         <Timeline />
         <Experience />
         <TechStack />
+        <GitHubContributions />
         <Contact />
         <Credits />
       </div>

@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+// Change these two lines:
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'; 
+
 import "../styles/Projects.css";
+
 
 export default function CodeViewer({ code, language, type }) {
   const isTabbed = code && typeof code === "object" && !Array.isArray(code);
