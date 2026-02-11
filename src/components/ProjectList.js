@@ -10,7 +10,7 @@ const ProjectList = {
       tags: ["Tailwind CSS", "Laravel", "UI/UX Design", "PHP"],
       files: [
         {
-          name: "UIU Robotics",
+          name: "UIU Robotics Website",
           type: "notebook",
           content:
             "https://robotics.uiu.ac.bd/",
@@ -32,7 +32,7 @@ const ProjectList = {
       tags: ["MySQL", "Tailwind CSS", "PHP"], 
       files: [
         {
-          name: "Dacca Delights",
+          name: "Dacca Delights Website",
           type: "notebook",
           content:
             "https://daccadelights.com/",
